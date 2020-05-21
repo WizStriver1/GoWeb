@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-    "html/template"
-	"net/http"
-	"strings"
+	"html/template"
 	"log"
 	"mymath"
+	"net/http"
 	"strconv"
+	"strings"
 )
 
 func sayHelloName(w http.ResponseWriter, r *http.Request) {
@@ -22,7 +22,7 @@ func sayHelloName(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("path", path)
 	fmt.Println("scheme", scheme)
 	fmt.Println("url_long", urlLong)
-    fmt.Println("method:", method) // 获取请求的方法
+	fmt.Println("method:", method) // 获取请求的方法
 	var value float64
 	for k, v := range r.Form {
 		fmt.Println("key", k)
@@ -50,8 +50,8 @@ func login(w http.ResponseWriter, r *http.Request) {
 		}
 		fmt.Println("username: ", r.Form["username"])
 		fmt.Println("password: ", r.Form["password"])
-		t2, _ := template.ParseFiles("success.gtpl")
-		log.Println(t2.Execute(w, nil))
+		// t2, _ := template.ParseFiles("success.gtpl")
+		// log.Println(t2.Execute(w, nil))
 	}
 }
 
