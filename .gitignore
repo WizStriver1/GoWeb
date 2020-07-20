@@ -1,0 +1,5 @@
+# Folder
+.idea
+.vscode
+# Files
+*.exe

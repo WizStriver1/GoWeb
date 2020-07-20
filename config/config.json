@@ -1,0 +1,28 @@
+{
+    "Database": {
+        "Type": "Bolt",
+        "Bolt": {       
+            "Path": "goweb.db"
+        }
+    },
+    "Server": {
+        "Hostname": "",
+        "UseHTTP": true,
+        "UseHTTPS": false,
+        "HTTPPort": 8080,
+        "HTTPSPort": 443,
+        "CertFile": "tls/server.crt",
+        "KeyFile": "tls/server.key"
+    },
+    "Session": {
+        "SecretKey": "&7229QZAXJbEtN8X6Iw6@9aS?B5nTdIS5",
+        "Name": "gosess",
+        "Options": {
+            "Path": "/",
+            "Domain": "",
+            "MaxAge": 28800,
+            "Secure": false,
+            "HttpOnly": true
+        }
+    }
+}
